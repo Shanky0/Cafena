@@ -6,6 +6,8 @@ document.querySelector('#menu-btn').onclick = () =>{
     cartItem.classList.remove('active');
 }
 
+// Search Button
+
 let searchForm = document.querySelector('.search-form');
 
 document.querySelector('#search-btn').onclick = () =>{
@@ -13,6 +15,7 @@ document.querySelector('#search-btn').onclick = () =>{
     navbar.classList.remove('active');
     cartItem.classList.remove('active');
 }
+// Cart Button
 
 let cartItem = document.querySelector('.cart-items-container');
 
@@ -26,4 +29,18 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
+}
+// Theme Switcher
+
+let light = document.getElementById("light");
+light.onclick = function(){
+    document.body.classList.toggle("lightTheme");
+if(document.body.classList.contains("lightTheme"))
+{
+    light.scr="images/moon.png";
+}
+else{
+    light.src="images/sun.png";
+}
+
 }
