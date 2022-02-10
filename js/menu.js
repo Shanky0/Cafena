@@ -1,57 +1,267 @@
-let navbar = document.querySelector(".navbar");
+// View 1
+const view1 = document.querySelector(".one__view");
+const view1OpenBtn = document.querySelector(".one__view__openBtn");
+const view1CloseBtn = document.querySelector(".one__view__closeBtn");
+const view1Overlay = document.querySelector(".one__view-overlay");
 
-document.querySelector("#menu-btn").onclick = () => {
-  navbar.classList.toggle("active");
-  searchForm.classList.remove("active");
-  cartItem.classList.remove("active");
-};
+view1OpenBtn.addEventListener("click", function () {
+  view1.classList.add("one__showview");
+  view1Overlay.classList.add("one__transparentBcg");
+  html.classList.add("no-scroll");
+});
 
-// Search Button
+view1CloseBtn.addEventListener("click", function () {
+  view1.classList.remove("one__showview");
+  view1Overlay.classList.remove("one__transparentBcg");
+  html.classList.remove("no-scroll");
+});
 
-let searchForm = document.querySelector(".search-form");
+// View 2
+const view2 = document.querySelector(".two__view");
+const view2OpenBtn = document.querySelector(".two__view__openBtn");
+const view2CloseBtn = document.querySelector(".two__view__closeBtn");
+const view2Overlay = document.querySelector(".two__view-overlay");
 
-document.querySelector("#search-btn").onclick = () => {
-  searchForm.classList.toggle("active");
-  navbar.classList.remove("active");
-  cartItem.classList.remove("active");
-};
-// Cart Button
+view2OpenBtn.addEventListener("click", function () {
+  view2.classList.add("two__showview");
+  view2Overlay.classList.add("two__transparentBcg");
+  html.classList.add("no-scroll");
+});
 
-let cartItem = document.querySelector(".cart-items-container");
+view2CloseBtn.addEventListener("click", function () {
+  view2.classList.remove("two__showview");
+  view2Overlay.classList.remove("two__transparentBcg");
+  html.classList.remove("no-scroll");
+});
 
-document.querySelector("#cart-btn").onclick = () => {
-  cartItem.classList.toggle("active");
-  navbar.classList.remove("active");
-  searchForm.classList.remove("active");
-};
+// View 3
+const view3 = document.querySelector(".three__view");
+const view3OpenBtn = document.querySelector(".three__view__openBtn");
+const view3CloseBtn = document.querySelector(".three__view__closeBtn");
+const view3Overlay = document.querySelector(".three__view-overlay");
 
-window.onscroll = () => {
-  navbar.classList.remove("active");
-  searchForm.classList.remove("active");
-  cartItem.classList.remove("active");
-};
-// Theme Switcher
+view3OpenBtn.addEventListener("click", function () {
+  view3.classList.add("three__showview");
+  view3Overlay.classList.add("three__transparentBcg");
+  html.classList.add("no-scroll");
+});
 
-let light = document.getElementById("dark");
-light.onclick = function () {
-  document.body.classList.toggle("lightTheme");
+view3CloseBtn.addEventListener("click", function () {
+  view3.classList.remove("three__showview");
+  view3Overlay.classList.remove("three__transparentBcg");
+  html.classList.remove("no-scroll");
+});
 
-  if (document.body.classList.contains("lightTheme")) {
-    light.scr = "images/moon.png";
+// View 4
+const view4 = document.querySelector(".four__view");
+const view4OpenBtn = document.querySelector(".four__view__openBtn");
+const view4CloseBtn = document.querySelector(".four__view__closeBtn");
+const view4Overlay = document.querySelector(".four__view-overlay");
+
+view4OpenBtn.addEventListener("click", function () {
+  view4.classList.add("four__showview");
+  view4Overlay.classList.add("four__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view4CloseBtn.addEventListener("click", function () {
+  view4.classList.remove("four__showview");
+  view4Overlay.classList.remove("four__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 5
+const view5 = document.querySelector(".five__view");
+const view5OpenBtn = document.querySelector(".five__view__openBtn");
+const view5CloseBtn = document.querySelector(".five__view__closeBtn");
+const view5Overlay = document.querySelector(".five__view-overlay");
+
+view5OpenBtn.addEventListener("click", function () {
+  view5.classList.add("five__showview");
+  view5Overlay.classList.add("five__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view5CloseBtn.addEventListener("click", function () {
+  view5.classList.remove("five__showview");
+  view5Overlay.classList.remove("five__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 6
+const view6 = document.querySelector(".six__view");
+const view6OpenBtn = document.querySelector(".six__view__openBtn");
+const view6CloseBtn = document.querySelector(".six__view__closeBtn");
+const view6Overlay = document.querySelector(".six__view-overlay");
+
+view6OpenBtn.addEventListener("click", function () {
+  view6.classList.add("six__showview");
+  view6Overlay.classList.add("six__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view6CloseBtn.addEventListener("click", function () {
+  view6.classList.remove("six__showview");
+  view6Overlay.classList.remove("six__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 7
+const view7 = document.querySelector(".seven__view");
+const view7OpenBtn = document.querySelector(".seven__view__openBtn");
+const view7CloseBtn = document.querySelector(".seven__view__closeBtn");
+const view7Overlay = document.querySelector(".seven__view-overlay");
+
+view7OpenBtn.addEventListener("click", function () {
+  view7.classList.add("seven__showview");
+  view7Overlay.classList.add("seven__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view7CloseBtn.addEventListener("click", function () {
+  view7.classList.remove("seven__showview");
+  view7Overlay.classList.remove("seven__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 8
+const view8 = document.querySelector(".eight__view");
+const view8OpenBtn = document.querySelector(".eight__view__openBtn");
+const view8CloseBtn = document.querySelector(".eight__view__closeBtn");
+const view8Overlay = document.querySelector(".eight__view-overlay");
+
+view8OpenBtn.addEventListener("click", function () {
+  view8.classList.add("eight__showview");
+  view8Overlay.classList.add("eight__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view8CloseBtn.addEventListener("click", function () {
+  view8.classList.remove("eight__showview");
+  view8Overlay.classList.remove("eight__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 9
+const view9 = document.querySelector(".nine__view");
+const view9OpenBtn = document.querySelector(".nine__view__openBtn");
+const view9CloseBtn = document.querySelector(".nine__view__closeBtn");
+const view9Overlay = document.querySelector(".nine__view-overlay");
+
+view9OpenBtn.addEventListener("click", function () {
+  view9.classList.add("nine__showview");
+  view9Overlay.classList.add("nine__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view9CloseBtn.addEventListener("click", function () {
+  view9.classList.remove("nine__showview");
+  view9Overlay.classList.remove("nine__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 10
+const view10 = document.querySelector(".ten__view");
+const view10OpenBtn = document.querySelector(".ten__view__openBtn");
+const view10CloseBtn = document.querySelector(".ten__view__closeBtn");
+const view10Overlay = document.querySelector(".ten__view-overlay");
+
+view10OpenBtn.addEventListener("click", function () {
+  view10.classList.add("ten__showview");
+  view10Overlay.classList.add("ten__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view10CloseBtn.addEventListener("click", function () {
+  view10.classList.remove("ten__showview");
+  view10Overlay.classList.remove("ten__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 11
+const view11 = document.querySelector(".eleven__view");
+const view11OpenBtn = document.querySelector(".eleven__view__openBtn");
+const view11CloseBtn = document.querySelector(".eleven__view__closeBtn");
+const view11Overlay = document.querySelector(".eleven__view-overlay");
+
+view11OpenBtn.addEventListener("click", function () {
+  view11.classList.add("eleven__showview");
+  view11Overlay.classList.add("eleven__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view11CloseBtn.addEventListener("click", function () {
+  view11.classList.remove("eleven__showview");
+  view11Overlay.classList.remove("eleven__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+// View 12
+const view12 = document.querySelector(".twelve__view");
+const view12OpenBtn = document.querySelector(".twelve__view__openBtn");
+const view12CloseBtn = document.querySelector(".twelve__view__closeBtn");
+const view12Overlay = document.querySelector(".twelve__view-overlay");
+
+view12OpenBtn.addEventListener("click", function () {
+  view12.classList.add("twelve__showview");
+  view12Overlay.classList.add("twelve__transparentBcg");
+  html.classList.add("no-scroll");
+});
+
+view12CloseBtn.addEventListener("click", function () {
+  view12.classList.remove("twelve__showview");
+  view12Overlay.classList.remove("twelve__transparentBcg");
+  html.classList.remove("no-scroll");
+});
+
+
+
+// Script part
+
+
+"use strict";
+// Login Interaction
+const loginBtn = document.querySelector("#login-btn");
+const signUpBtn = document.querySelector("#sign-up-btn");
+const usernameIn = document.querySelector("#userid");
+const emailIn = document.querySelector("#emailid");
+const usernameOut = document.querySelector("#username-display");
+const usernameOutNavBar = document.querySelector(".sign-in");
+const signUpNavBar = document.querySelector(".sign-up");
+const slashNavBar = document.querySelector("#slash");
+const passwordIn = document.querySelector("#pswrd");
+const loginForm = document.querySelector("#login-form");
+
+// Navbar Mobile
+const menuBtn = document.querySelector(".menu-btn");
+const hamburger = document.querySelector(".menu-btn__burger");
+const nav = document.querySelector(".nav");
+const menuNav = document.querySelector(".menu-nav");
+const navItems = document.querySelectorAll(".menu-nav__item");
+
+let showMenu = false;
+
+menuBtn.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  if (!showMenu) {
+    hamburger.classList.add("open");
+    nav.classList.add("open");
+    menuNav.classList.add("open");
+    html.classList.add("no-scroll");
+    navItems.forEach((item) => item.classList.add("open"));
+
+    showMenu = true;
   } else {
-    light.src = "images/sun.png";
+    hamburger.classList.remove("open");
+    nav.classList.remove("open");
+    menuNav.classList.remove("open");
+    html.classList.remove("no-scroll");
+    navItems.forEach((item) => item.classList.remove("open"));
+
+    showMenu = false;
   }
-};
-
-//  Preloader
- var loader = document.getElementById("preloader");
- window.addEventListener("load", function(){
-   loader.style.display="none";
- })
-
-//  For sending Email
-
-
+}
 
 // Shopping Cart Open and Close Function
 const html = document.querySelector("html");
@@ -92,7 +302,7 @@ function updateTotal(moneyChange) {
   totalAmount += moneyChange;
   localStorage.setItem("total", totalAmount.toString());
   if (totalAmount > 1) {
-    total.innerHTML = `<span class="span-primary">Total Amount:</span> $${totalAmount.toFixed(
+    total.innerHTML = `<span class="span-primary">Total Amount:</span> ₹${totalAmount.toFixed(
       2
     )}`;
   } else {
@@ -225,7 +435,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item1Counter++;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(2.1);
+    updateTotal(50);
     Storage.setAmount("item1", item1Counter);
   });
 
@@ -238,7 +448,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item2Counter++;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(2.6);
+    updateTotal(50);
     Storage.setAmount("item2", item2Counter);
   });
 
@@ -251,7 +461,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item3Counter++;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(2.79);
+    updateTotal(50);
     Storage.setAmount("item3", item3Counter);
   });
 
@@ -264,7 +474,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item4Counter++;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(2.05);
+    updateTotal(50);
     Storage.setAmount("item4", item4Counter);
   });
 
@@ -277,7 +487,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item5Counter++;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(2.2);
+    updateTotal(50);
     Storage.setAmount("item5", item5Counter);
   });
 
@@ -290,7 +500,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item6Counter++;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(2.8);
+    updateTotal(50);
     Storage.setAmount("item6", item6Counter);
   });
 
@@ -303,7 +513,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item7Counter++;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(2.25);
+    updateTotal(50);
     Storage.setAmount("item7", item7Counter);
   });
 
@@ -316,7 +526,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item8Counter++;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(2.59);
+    updateTotal(50);
     Storage.setAmount("item8", item8Counter);
   });
 
@@ -329,7 +539,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item9Counter++;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(2.34);
+    updateTotal(50);
     Storage.setAmount("item9", item9Counter);
   });
 
@@ -342,7 +552,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item10Counter++;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(2.89);
+    updateTotal(50);
     Storage.setAmount("item10", item10Counter);
   });
 
@@ -355,7 +565,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item11Counter++;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(2.18);
+    updateTotal(50);
     Storage.setAmount("item11", item11Counter);
   });
 
@@ -368,7 +578,7 @@ if (document.querySelector(".one__cart__button")) {
     }
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(50);
     Storage.setAmount("item12", item12Counter);
   });
 }
@@ -454,10 +664,10 @@ function checkStorageForCart() {
  */
 function initializeItem1() {
   item1Display.innerHTML += `<div class="one1-cart-item">
-  <img src="../img/caffe-americano.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Caffè</span> Americano</h3>
-      <h4>$2.10</h4>
+      <h4>₹50</h4>
       <span class="remove-item-1">Remove</span>
     </div>
     <div>
@@ -478,14 +688,14 @@ function initializeItem1() {
   up1.addEventListener("click", function () {
     item1Counter++;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(2.1);
+    updateTotal(50);
     Storage.setAmount("item1", item1Counter);
   });
 
   down1.addEventListener("click", function () {
     item1Counter--;
     item1Amount.innerHTML = item1Counter;
-    updateTotal(-2.1);
+    updateTotal(-50);
     Storage.setAmount("item1", item1Counter);
 
     if (item1Counter === 0) {
@@ -496,7 +706,7 @@ function initializeItem1() {
 
   remove1.addEventListener("click", function () {
     item1Display.innerHTML = "";
-    updateTotal(-2.1 * item1Counter);
+    updateTotal(-50 * item1Counter);
     item1Counter = 0;
     Storage.removeAmount("item1");
   });
@@ -508,10 +718,10 @@ function initializeItem1() {
  */
 function initializeItem2() {
   item2Display.innerHTML += `<div class="two2-cart-item">
-  <img src="../img/caffe-misto.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Caffè</span> Misto</h3>
-      <h4>$2.60</h4>
+      <h4>₹50</h4>
       <span class="remove-item-2">Remove</span>
     </div>
     <div>
@@ -532,14 +742,14 @@ function initializeItem2() {
   up2.addEventListener("click", function () {
     item2Counter++;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(2.6);
+    updateTotal(50);
     Storage.setAmount("item2", item2Counter);
   });
 
   down2.addEventListener("click", function () {
     item2Counter--;
     item2Amount.innerHTML = item2Counter;
-    updateTotal(-2.6);
+    updateTotal(-50);
     Storage.setAmount("item2", item2Counter);
 
     if (item2Counter === 0) {
@@ -550,7 +760,7 @@ function initializeItem2() {
 
   remove2.addEventListener("click", function () {
     item2Display.innerHTML = "";
-    updateTotal(-2.6 * item2Counter);
+    updateTotal(-50 * item2Counter);
     item2Counter = 0;
     Storage.removeAmount("item2");
   });
@@ -562,10 +772,10 @@ function initializeItem2() {
  */
 function initializeItem3() {
   item3Display.innerHTML += `<div class="three3-cart-item">
-  <img src="../img/caffe-americano.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Blonde Caffè</span> Americano</h3>
-      <h4>$2.79</h4>
+      <h4>₹50</h4>
       <span class="remove-item-3">Remove</span>
     </div>
     <div>
@@ -586,14 +796,14 @@ function initializeItem3() {
   up3.addEventListener("click", function () {
     item3Counter++;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(2.79);
+    updateTotal(50);
     Storage.setAmount("item3", item3Counter);
   });
 
   down3.addEventListener("click", function () {
     item3Counter--;
     item3Amount.innerHTML = item3Counter;
-    updateTotal(-2.79);
+    updateTotal(-50);
     Storage.setAmount("item3", item3Counter);
 
     if (item3Counter === 0) {
@@ -604,7 +814,7 @@ function initializeItem3() {
 
   remove3.addEventListener("click", function () {
     item3Display.innerHTML = "";
-    updateTotal(-2.79 * item3Counter);
+    updateTotal(-50 * item3Counter);
     item3Counter = 0;
     Storage.removeAmount("item3");
   });
@@ -616,10 +826,10 @@ function initializeItem3() {
  */
 function initializeItem4() {
   item4Display.innerHTML += `<div class="four4-cart-item">
-  <img src="../img/dark-roast-coffee.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Blonde</span> Roast</h3>
-      <h4>$2.05</h4>
+      <h4>₹50</h4>
       <span class="remove-item-4">Remove</span>
     </div>
     <div>
@@ -640,14 +850,14 @@ function initializeItem4() {
   up4.addEventListener("click", function () {
     item4Counter++;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(2.05);
+    updateTotal(50);
     Storage.setAmount("item4", item4Counter);
   });
 
   down4.addEventListener("click", function () {
     item4Counter--;
     item4Amount.innerHTML = item4Counter;
-    updateTotal(-2.05);
+    updateTotal(-50);
     Storage.setAmount("item4", item4Counter);
 
     if (item4Counter === 0) {
@@ -658,7 +868,7 @@ function initializeItem4() {
 
   remove4.addEventListener("click", function () {
     item4Display.innerHTML = "";
-    updateTotal(-2.05 * item4Counter);
+    updateTotal(-50 * item4Counter);
     item4Counter = 0;
     Storage.removeAmount("item4");
   });
@@ -670,10 +880,10 @@ function initializeItem4() {
  */
 function initializeItem5() {
   item5Display.innerHTML += `<div class="five5-cart-item">
-  <img src="../img/dark-roast-coffee.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Dark Roast</span> Coffee</h3>
-      <h4>$2.20</h4>
+      <h4>₹50</h4>
       <span class="remove-item-5">Remove</span>
     </div>
     <div>
@@ -694,14 +904,14 @@ function initializeItem5() {
   up5.addEventListener("click", function () {
     item5Counter++;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(2.2);
+    updateTotal(50);
     Storage.setAmount("item5", item5Counter);
   });
 
   down5.addEventListener("click", function () {
     item5Counter--;
     item5Amount.innerHTML = item5Counter;
-    updateTotal(-2.2);
+    updateTotal(-50);
     Storage.setAmount("item5", item5Counter);
 
     if (item5Counter === 0) {
@@ -712,7 +922,7 @@ function initializeItem5() {
 
   remove5.addEventListener("click", function () {
     item5Display.innerHTML = "";
-    updateTotal(-2.2 * item5Counter);
+    updateTotal(-50 * item5Counter);
     item5Counter = 0;
     Storage.removeAmount("item5");
   });
@@ -724,10 +934,10 @@ function initializeItem5() {
  */
 function initializeItem6() {
   item6Display.innerHTML += `<div class="six6-cart-item">
-  <img src="../img/dark-roast-coffee.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Pike Place®</span> Roast</h3>
-      <h4>$2.80</h4>
+      <h4>₹50</h4>
       <span class="remove-item-6">Remove</span>
     </div>
     <div>
@@ -748,14 +958,14 @@ function initializeItem6() {
   up6.addEventListener("click", function () {
     item6Counter++;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(2.8);
+    updateTotal(50);
     Storage.setAmount("item6", item6Counter);
   });
 
   down6.addEventListener("click", function () {
     item6Counter--;
     item6Amount.innerHTML = item6Counter;
-    updateTotal(-2.8);
+    updateTotal(-50);
     Storage.setAmount("item6", item6Counter);
 
     if (item6Counter === 0) {
@@ -766,7 +976,7 @@ function initializeItem6() {
 
   remove6.addEventListener("click", function () {
     item6Display.innerHTML = "";
-    updateTotal(-2.8 * item6Counter);
+    updateTotal(-50 * item6Counter);
     item6Counter = 0;
     Storage.removeAmount("item6");
   });
@@ -778,10 +988,10 @@ function initializeItem6() {
  */
 function initializeItem7() {
   item7Display.innerHTML += `<div class="seven7-cart-item">
-  <img src="../img/dark-roast-coffee.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Decaf Pike </span>Place® Roast</h3>
-      <h4>$2.25</h4>
+      <h4>₹50</h4>
       <span class="remove-item-7">Remove</span>
     </div>
     <div>
@@ -802,14 +1012,14 @@ function initializeItem7() {
   up7.addEventListener("click", function () {
     item7Counter++;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(2.25);
+    updateTotal(50);
     Storage.setAmount("item7", item7Counter);
   });
 
   down7.addEventListener("click", function () {
     item7Counter--;
     item7Amount.innerHTML = item7Counter;
-    updateTotal(-2.25);
+    updateTotal(-50);
     Storage.setAmount("item7", item7Counter);
 
     if (item7Counter === 0) {
@@ -820,7 +1030,7 @@ function initializeItem7() {
 
   remove7.addEventListener("click", function () {
     item7Display.innerHTML = "";
-    updateTotal(-2.25 * item7Counter);
+    updateTotal(-50 * item7Counter);
     item7Counter = 0;
     Storage.removeAmount("item7");
   });
@@ -832,10 +1042,10 @@ function initializeItem7() {
  */
 function initializeItem8() {
   item8Display.innerHTML += `<div class="eight8-cart-item">
-  <img src="../img/cappuccino.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Cappu</span>ccino</h3>
-      <h4>$2.59</h4>
+      <h4>₹50</h4>
       <span class="remove-item-8">Remove</span>
     </div>
     <div>
@@ -856,14 +1066,14 @@ function initializeItem8() {
   up8.addEventListener("click", function () {
     item8Counter++;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(2.59);
+    updateTotal(50);
     Storage.setAmount("item8", item8Counter);
   });
 
   down8.addEventListener("click", function () {
     item8Counter--;
     item8Amount.innerHTML = item8Counter;
-    updateTotal(-2.59);
+    updateTotal(-50);
     Storage.setAmount("item8", item8Counter);
 
     if (item8Counter === 0) {
@@ -874,7 +1084,7 @@ function initializeItem8() {
 
   remove8.addEventListener("click", function () {
     item8Display.innerHTML = "";
-    updateTotal(-2.59 * item8Counter);
+    updateTotal(-50 * item8Counter);
     item8Counter = 0;
     Storage.removeAmount("item8");
   });
@@ -886,10 +1096,10 @@ function initializeItem8() {
  */
 function initializeItem9() {
   item9Display.innerHTML += `<div class="nine9-cart-item">
-  <img src="../img/cappuccino.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Blonde</span> Cappuccino</h3>
-      <h4>$2.34</h4>
+      <h4>₹50</h4>
       <span class="remove-item-9">Remove</span>
     </div>
     <div>
@@ -910,14 +1120,14 @@ function initializeItem9() {
   up9.addEventListener("click", function () {
     item9Counter++;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(2.34);
+    updateTotal(50);
     Storage.setAmount("item9", item9Counter);
   });
 
   down9.addEventListener("click", function () {
     item9Counter--;
     item9Amount.innerHTML = item9Counter;
-    updateTotal(-2.34);
+    updateTotal(-50);
     Storage.setAmount("item9", item9Counter);
 
     if (item9Counter === 0) {
@@ -928,7 +1138,7 @@ function initializeItem9() {
 
   remove9.addEventListener("click", function () {
     item9Display.innerHTML = "";
-    updateTotal(-2.34 * item9Counter);
+    updateTotal(-50 * item9Counter);
     item9Counter = 0;
     Storage.removeAmount("item9");
   });
@@ -940,10 +1150,10 @@ function initializeItem9() {
  */
 function initializeItem10() {
   item10Display.innerHTML += `<div class="ten10-cart-item">
-  <img src="../img/espresso.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Espr</span>esso</h3>
-      <h4>$2.89</h4>
+      <h4>₹50</h4>
       <span class="remove-item-10">Remove</span>
     </div>
     <div>
@@ -964,14 +1174,14 @@ function initializeItem10() {
   up10.addEventListener("click", function () {
     item10Counter++;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(2.89);
+    updateTotal(50);
     Storage.setAmount("item10", item10Counter);
   });
 
   down10.addEventListener("click", function () {
     item10Counter--;
     item10Amount.innerHTML = item10Counter;
-    updateTotal(-2.89);
+    updateTotal(-50);
     Storage.setAmount("item10", item10Counter);
 
     if (item10Counter === 0) {
@@ -982,7 +1192,7 @@ function initializeItem10() {
 
   remove10.addEventListener("click", function () {
     item10Display.innerHTML = "";
-    updateTotal(-2.89 * item10Counter);
+    updateTotal(-50 * item10Counter);
     item10Counter = 0;
     Storage.removeAmount("item10");
   });
@@ -994,10 +1204,10 @@ function initializeItem10() {
  */
 function initializeItem11() {
   item11Display.innerHTML += `<div class="eleven11-cart-item">
-  <img src="../img/espresso-macchiato.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Espresso</span> Macchiato</h3>
-      <h4>$2.18</h4>
+      <h4>₹50</h4>
       <span class="remove-item-11">Remove</span>
     </div>
     <div>
@@ -1025,7 +1235,7 @@ function initializeItem11() {
   down11.addEventListener("click", function () {
     item11Counter--;
     item11Amount.innerHTML = item11Counter;
-    updateTotal(-2.18);
+    updateTotal(-50);
     Storage.setAmount("item11", item11Counter);
 
     if (item11Counter === 0) {
@@ -1036,7 +1246,7 @@ function initializeItem11() {
 
   remove11.addEventListener("click", function () {
     item11Display.innerHTML = "";
-    updateTotal(-2.18 * item11Counter);
+    updateTotal(-50 * item11Counter);
     item11Counter = 0;
     Storage.removeAmount("item11");
   });
@@ -1048,10 +1258,10 @@ function initializeItem11() {
  */
 function initializeItem12() {
   item12Display.innerHTML += `<div class="twelve12-cart-item">
-  <img src="../img/flat-white.jpg" alt="product" />
+  <img src="images/Turkish.jpg" alt="product" />
     <div>
       <h3><span class="span-primary">Flat</span> White</h3>
-      <h4>$2.75</h4>
+      <h4>₹50</h4>
       <span class="remove-item-12">Remove</span>
     </div>
     <div>
@@ -1072,14 +1282,14 @@ function initializeItem12() {
   up12.addEventListener("click", function () {
     item12Counter++;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(2.75);
+    updateTotal(50);
     Storage.setAmount("item12", item12Counter);
   });
 
   down12.addEventListener("click", function () {
     item12Counter--;
     item12Amount.innerHTML = item12Counter;
-    updateTotal(-2.75);
+    updateTotal(-50);
     Storage.setAmount("item12", item12Counter);
 
     if (item12Counter === 0) {
@@ -1090,9 +1300,8 @@ function initializeItem12() {
 
   remove12.addEventListener("click", function () {
     item12Display.innerHTML = "";
-    updateTotal(-2.75 * item12Counter);
+    updateTotal(-50 * item12Counter);
     item12Counter = 0;
     Storage.removeAmount("item12");
   });
 }
-

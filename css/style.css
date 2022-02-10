@@ -28,6 +28,16 @@
     transition: .2s linear;
 }
 
+#preloader{
+background: #000 url(https://gifimage.net/wp-content/uploads/2019/12/loading-gif-file-.gif) no-repeat center;
+height: 100vh;
+width:100%;
+position: fixed;
+z-index: 100;
+background-size: 100%;
+}
+
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -53,13 +63,6 @@ html::-webkit-scrollbar-thumb{
     width:30px;
     cursor: pointer;
     height: 30px;
-}
-
-#dark.switch {
-    display: none;
-}
-#light.switch {
-    display: inline-block;
 }
 
 body{
@@ -128,7 +131,10 @@ section{
     font-size: 2.5rem;
     margin-left: 2rem;
     display: inline-flex;
-    
+}
+
+.header .icons div img{
+    height: 2.5rem;
 }
 
 .header .icons div:hover{
