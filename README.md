@@ -5,3 +5,5 @@
  Run it using xaamp server.
  First create the required database in phpMyadmin.
  
+ The Website is created using HTML, CSS, JavaScript for frontend part.
+ Used database is MySQL. PHP is used as backend language.
